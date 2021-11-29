@@ -1,0 +1,11 @@
+#!/bin/sh
+
+command -v python3 >/dev/null 2>&1 || exit 1
+
+if [ -r .env ]; then
+  # shellcheck disable=SC2046
+  env $(grep -v '^#' .env | xargs) python3 bot.py "$@"
+  exit $?
+fi
+
+python3 bot.py "$@"
