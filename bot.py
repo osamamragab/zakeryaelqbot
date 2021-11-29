@@ -46,7 +46,7 @@ def main() -> int:
     if not DEV_MODE:
         delta = (EXAMS_DATE - datetime.now().date()).days
         if delta > 0:
-            bot.update_status(f"فاضل على الامتحانات {delta} يوم\n#ذاكر_يا_علق")
+            bot.update_status(f"فاضل على الامتحانات {delta} يوم.")
         elif delta == 0:
             bot.update_status("شروق يوم العملية")
 
