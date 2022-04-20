@@ -10,7 +10,7 @@ ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
 ACCESS_TOKEN_SECRET = os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 DEV_MODE = os.getenv("DEV_MODE") == "1"
 
-EXAMS_DATE = date(2022, 6, 11)
+EXAMS_DATE = date(2022, 6, 26)
 
 
 def get_api() -> tweepy.API:
